@@ -3,15 +3,14 @@
 
 int main()
 {
-    int N,M,k,i;
+    int N,M,i;
     printf("enter total no.of jars");
     scanf("%d",&N);
     printf("enter total no.of times you want to add candies:");
     scanf("%d",&M);
-    int a[M],b[M],o;
+    int a[M],b[M],o,k[M];
     
-    printf("enter total no.of candies to added ");
-    scanf("%d",&k);
+    
     for(i=0;i<M;i++)
     {
     
@@ -19,12 +18,13 @@ int main()
          scanf("%d",&a[i]);
          printf("enter ending jar number in case %d\n",i+1);
          scanf("%d",&b[i]); 
-        
+         printf("enter no.of candies to be added  in case %d\n",i+1);
+         scanf("%d",&k[i]); 
     }
     int s=0;
     for(i=0;i<M;i++)
     {
-        s=s+(b[i]-a[i]+1)*k;
+        s=s+((b[i]-a[i]+1)*k[i]);
         
     }
     o=s/N;
