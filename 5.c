@@ -1,8 +1,16 @@
-
 #include <stdio.h>
 
 int main()
 {
+    printf("if result is not specified then it is not a fabonacii series term\n");
+    int N,I;
+    printf("enter no.of cases:");
+    scanf("%d",&N);
+    for(I=0;I<N;I++)
+    {
+        
+    
+    
     int n,a,b,c,i=0;
     
     printf("check for given number is a faboncii term or not\n");
@@ -29,7 +37,7 @@ int main()
     b=c;
     i=i+1;
     }while(c<=n);
-    printf("if result is not specified then it is not a fabonacii series term");
+    }
     
     return 0;
 }
