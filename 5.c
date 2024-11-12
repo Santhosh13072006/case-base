@@ -2,18 +2,19 @@
 
 int main()
 {
-    printf("if result is not specified then it is not a fabonacii series term\n");
-    int N,I;
+    
+    int N,I,r;
     printf("enter no.of cases:");
     scanf("%d",&N);
+    printf("check for given number is a faboncii term or not\n");
     for(I=0;I<N;I++)
     {
         
-    
+    r=0;
     
     int n,a,b,c,i=0;
     
-    printf("check for given number is a faboncii term or not\n");
+    
     printf("enter number\n");
     scanf("%d",&n);
     if(n==0)
@@ -31,13 +32,24 @@ int main()
         c=a+b;
      if(c==n)
     {
-        printf(" reslut=given number is fabonacii  series term\n");
+        r=1;
+        
     }
     a=b;
     b=c;
     i=i+1;
     }while(c<=n);
+    
+    if(r==1)
+    {
+      printf("given number is fibonacii term\n");
     }
+    else
+    {
+        printf("given number is not a fibonacii term\n");
+    }
+   }
+    
     
     return 0;
 }
