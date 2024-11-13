@@ -11,7 +11,7 @@ int main()
     {
         
     
-    char s[100],c,g[100];
+    char s[100],c,g[100],count;
     int i,l,j,a,b,n=0,m=0,k,h[100],e;
     printf("enter a string:");
     scanf("%s",s);
@@ -38,6 +38,7 @@ int main()
                  s[j]=c;
                  n=i;
                  m=j;
+                 count=1;
                  
             
             break;
@@ -57,6 +58,8 @@ int main()
             break;
         }
     }
+    if(count==1)
+    {
      
     for(i=m+1;i<l;i++)
     {
@@ -79,6 +82,7 @@ int main()
     {
         char d=h[i];
         s[i]=d;
+    }
     }
     
 
